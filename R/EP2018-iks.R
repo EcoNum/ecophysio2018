@@ -12,15 +12,18 @@ repos_load("Data/ecophysio2018/iks/C_2018-04-25_00.01.40_5ADFA944_IKS.RData")
 iks1 <-EcoNumData_IKS.C
 
 library(tidyverse)
-iks <- bind_rows(iks1,iks2,iks3)
+EP2018_iks <- bind_rows(iks1,iks2,iks3)
 
 rm(iks1,iks2,iks3,EcoNumData_IKS.C)
 
 library(readxl)
 
+#Importation du tableau avec les mesures iks et les mesures avec l'oximètre pour faire la correction
 iks_cor <- read_excel("/media/sf_Shared/Projects/ecophysio2018/Data/ecophysio2018/iks/iks-cor.xlsx",
                       col_types = c("text", "numeric", "numeric",
                                     "text"))
+
+#On change la manière dont les dates sont enregistrées
 iks_cor$date <- as.POSIXct(iks_cor$date)
 
 
@@ -29,25 +32,46 @@ iks_cor$date <- as.POSIXct(iks_cor$date)
 #Il y a des codes pour faire cela, dans le fichier Analyse respiro.
 #calib.values : WTW
 
+#Maintenant on va travailler respiro par respiro pour ainsi regarder la consommation et/ou production en oxygène dans chaque respiromètre
+
+##Respiromètre 1
+
 iks_cor_1 <- filter(iks_cor, respiro == "R1")
 
-iks$O2_1_cor <- correct_monitoring(iks$Time, values = iks$O2_1, calib.dates = iks_cor_1$date, calib.values = iks_cor_1$O2, extrapolate = TRUE)
+###Ici on va corriger les valeurs enregistrées en 02 dans les respiromètres en fonction des mesures que l'on a prise avec l'oxymètre et l'iks
 
-plot(iks$O2_1_cor)
+EP2018_iks$O2_1_cor <- correct_monitoring(EP2018_iks$Time, values = EP2018_iks$O2_1, calib.dates = iks_cor_1$date, calib.values = iks_cor_1$O2, extrapolate = TRUE)
 
-#On va maintenant extraire les périodes qui nous interesse en coupant dans la série les moment ou le respiromètre est fermé et pour chaque période ajuster une droite et calculer la pente de la droite, on donne une série d'informations (volume du respiro, masse de la bouture,...)
+plot(EP2018_iks$O2_1_cor)
 
-# Graph over the whole time
-plot(iks$Time, iks[["O2_1_cor"]], type = "l", xlab = "Time",
+###On va maintenant extraire les périodes qui nous interesse en coupant dans la série les moment ou le respiromètre est fermé et pour chaque période ajuster une droite et calculer la pente de la droite, on donne une série d'informations (volume du respiro, masse de la bouture,...)
+
+###On repart du bon graphique, celui corrigé
+
+plot_iks_R1 <- plot(EP2018_iks$Time, EP2018_iks[["O2_1_cor"]], type = "l", xlab = "Time",
   ylab = "[O2] mg/L"); grid()
 
-# Identify the time period to use
-#pos <- identify(iks$Time, iks[["O2_1_cor"]])
-pos = as.integer(c(2719, 2960, 3151, 3348, 3563, 3752, 3957, 4151))
+###On va placer dessus des lignes avec les points de début et de fin entre chaque cycle. On le fait deux fois pour bien altener quand cela s'ouvre et se ferme.
 
-#res <- respirometry(datarespi, series, pos, n = n1, mass = mass, ref.respi = ref.respi, main = title)
+test <- as.POSIXct("2018-04-25 12:00:00")
+t <- (1:46)*60*60
+t <- t+test
 
-res_O2_1 <- respirometry(iks, "O2_1_cor", pos=pos, n = 1, mass = 1, ref.respi = 0, vol.respi = 1.3,main = "R1")
+plot_iks_R1 + abline(v = t)
+
+test <- as.POSIXct("2018-04-25 12:00:00")
+t <- (1:46)*120*60
+t <- t+test
+
+plot_iks_R1 + abline(v = t, col = "red")
+
+### Avec la fonction identify on sait mettre les bons points entre chaque cycle.
+
+pos <- identify(EP2018_iks$Time, EP2018_iks[["O2_1_cor"]])
+
+###On utilise maintenant la fonction respirometry pour voir à chaque cycle comment à évolué l'oxygène.
+
+res_O2_1 <- respirometry(EP2018_iks, "O2_1_cor", pos = pos, n =1, mass = 0.988, ref.respi = 0, vol.respi = 1.3, main = "R1")
 
 res_O2_1
 

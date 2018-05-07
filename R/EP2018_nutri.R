@@ -82,15 +82,15 @@ ggplot(data = nutri, mapping = aes( x = sample_date, y = NH4_conc, color = loca)
   geom_line(na.rm = TRUE)
 
 nutri %>%
-  mutate( expe = case_when(loca == "A0" ~ "A0",
-                           loca =="R1" ~ "hl",
-                           loca == "R2" ~ "hl",
-                           loca == "R3" ~ "hl",
-                           loca == "R4" ~ "hl",
-                           loca =="R5" ~ "ll",
-                           loca == "R6" ~ "ll",
-                           loca == "R7" ~ "ll",
-                           loca == "R8" ~ "ll")) -> nutri
+  mutate( expe = case_when(loca == "A0" ~ "M",
+                           loca =="R1" ~ "A",
+                           loca == "R2" ~ "A",
+                           loca == "R3" ~ "A",
+                           loca == "R4" ~ "A",
+                           loca =="R5" ~ "B",
+                           loca == "R6" ~ "B",
+                           loca == "R7" ~ "B",
+                           loca == "R8" ~ "B")) -> nutri
 
 nutri <- filter(nutri, loca != "NA")
 

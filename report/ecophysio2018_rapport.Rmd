@@ -1,0 +1,358 @@
+---
+title: "Ecophysiologie : protocole de respirométrie et mesure de la croissance de coraux"
+author: "Dugauquier Rémy, Gille Madeleine"
+date: "P.Grosjean, G.Engels, Ecologie numérique des milieux aquatiques, UMONS 17/04/2018"
+output: html_notebook
+---
+
+# Introduction
+
+L'écophysiologie est à l'interaction entre l'écologie et la physiologie. C'est une discipline qui étudie la mesure des changements d'un organisme face aux changements du milieu. L'écophysiologie inclu beaucoup de notion comme l'alimentation, la digestion, la respiration, la croissance, l'éco-toxicologie,...
+
+Lorsque l'on étudie un organisme en écophysiologie, ce qui est le plus important c'est de regarder les flux (entrant et sortant ainsi que l'anabolisme et le catabolisme) et regarder comment ces flux changent en fonction des paramètres (température, nourriture, salinité, acidification,...).
+La plupart des fluxs ne sont pas mesurables directement. On peut, pour les quantifier, utiliser des proxy. Un proxy est une variable facilement mesurable et fortement corrélée avec ce qu'on veut étudier. Si l'on étudie la respiration par exemple nous pouvons utiliser comme proxy soit la consommation en oxygène soit la production en CO2.
+Une autre manière de quantifier les flux est de regarder la croissance somatique de l'individu. On le mesure à deux moment dans le temps et la différence de masse observée sera une expression directe de son état de santé.
+Enfin, les fluxs sont également mesurables à l'aidr d'isotopes radioactifs et stables mais ils sont difficilement manipulable et assez cher.
+
+Dans le cadre de ce stage, nous allons nous axer sur 2 techniques d'écophysiologie, la mesure de la croissance et la respirométrie. Nous allons mesurer la croissance et la respiration de boutures de Seriatopora hystrix.
+
+Nous allons principalement essayer d'améliorer la manipulation de respirométrie. En effet, lors d'une précédente manipulation au respiromètre plusieurs problèmes sont apparus. Lors de la prise des mesures et des échantillons, une grosse perte de température se marquait entre les différents échantillons. De plus, on remarque que les boutures de coraux subissent un stress dans le respiromètre. L'hypothèse principale est que la lumière des respiromètre stresserait les boutures, nous allons essayer de voir si elle influence réellement en utilisant 2 types de respiromètres différents.
+
+# Techniques d'écophysiologie
+
+## Mesure de la croissance
+
+Les boutures ne peuvent pas être mesurée directement sur une simple balance. Si on pèse directement, on pèse également l'eau qu'il y a dessus, les algues, les détritus,... L'erreur faite sera supérieur à la variation de la masse étant donné que l'on mesure quotidiennement. On va donc utiliser une pesée plus précise, la pesée en immersion. Avec ce type de pesée, on peut mesurer la croissance de la bouture uniquement sur base de son squelette en carbonate de calcium. En effet, comme la pesée est dans la masse d'eau, le poids que mesure la balance est égal au poids de la bouture moins le poids du volume d'eau déplacé. Les tissus ont une densité équivalente à celle de l'eau et leur poids est exactement compensé par la poussée d'Archimède. 
+
+Pour maitriser la technique, nous pesons plusieurs fois la même bouture pour ainsi bien estimer le poids et la variation d'une pesée.
+
+Comme nous allons faire des mesures sur un cours intervalle de temps (17 jours) et que le poids de nos boutures n'est pas le même à la base, nous interprèterons la croissance en relatif (en pourcentage).
+
+Les boutures ont été placée dans le mésocosme A0 le 17/04/2018. La mesure du poid a été effectuée jusqu'au 04/05/2018. Du 25 au 27/04, 6 boutures(1, 2, 10, 19, 16 et 13) sont séléctionnées (selon leur taux de croissance) et placée dans les respiromètres. Les mesures ont ensuite continué jusqu'au 04/05/2018.
+
+## La respirométrie
+
+Le but de la respirométrie est de monitorer la concentration en oxygène au cours du temps. Pour cela, on prend un récipient clos (pour ne pas contaminer avec l'oxygène de l'air) et une sonde à oxygène.
+
+Si l'on mesure la respirométrie d'un poisson, on s'attend à ce que l'oxygène diminue. Mais le principale problème de cette technique est le stress engendré à l'organisme. Si le poisson est trop stressé, les mesures en oxygène sont totalement biaisées.
+
+Pour limiter le stress de l'organisme, on relie le respiromètre à une arrivée d'eau et une sortie d'eau. On va injecter de l'eau par intermitence (à l'aide d'une valve). On fait ainsi remonter la concentration en oxygène dans le milieu et l'organisme stresse moins. Nous on va le faire avec un cycle toute les heures (une heure fermé, une heure ouvert, une heure fermé,...). On voit donc une alternance de diminution (respiration) et d'augmentation (injection).
+ 
+On ne monitore pas le CO2 car dans l'eau il va réagir en fonction des équilibres acides-bases et un être vivant affecte ces équilibres. C'est bien plus facile de travailler avec l'oxygène car il ne rentre quasiment que dans la respiration/photosynthèse.
+
+# Protocole 
+
+## Ancien protocole 
+
+Nadège prélevait ses échantillons directement aux gros tuyaux et tout les échantillons en même temps. Elle allait ensuite seulement prendre les paramètres avec les sondes. 
+Cette méthode a donc l'énorme désavantage d'engendre une chute des température dans les échantillons et cette chute provoque des modifications dans les autres paramètres.
+
+![Graphique de la température selon l'ancienne méthode de respirométrie](../Image/ancienprotocole_temp.png)
+
+Cet ancien protocole a mis également à jour un certains stress sur les boutures. Ce stress est visible lorsque nous observons le graphique de l'évolution de la croissance.
+
+![Graphique de la croissance selon l'ancienne méthode de respirométrie](../Image/ancienprotocole_growth.png)
+
+## Nouveau protocole
+
+Nous prenons 20 boutures dont nous allons suivre l'évolution du poids quotidiennement. Les boutures viennent du bac B0 et nous les mettons dans le A0 ou la croissance est normalement plus rapide. Toutes les boutures sont accrochées sur des reglettes en plastique par des fils de nylon et toutes ont subi le même traitement, c'est-à-dire une seule coupe. 
+
+Les boutures sont mises 7 jours dans le mésocosmes avant d'aller en respirométrie. Les boutures misent en respirométrie sont séléctionnées sur base de la croissance, nous prenons celle ayant le meilleur taux de croissance ( + de 0.35%) sur les 20 boutures du mésocosmes.
+
+Nous utilisons en tout 8 respiromètres. Ils sont séparés par quatres dans deux bac à respiromètre différents, le A et le B. Les respiromètres sont alimentés par l'eau venant du mésocosme A0 et nous les réglons avec une alternance de cycle 1h ouvert/1h fermé. Les boutures sont éclairée de 9h à 21h. Dans chaque bac à respirométrie, nous plaçons 4 respiromètres, 1 vide et 3 avec boutures. Le respiromètre vide sert de contrôle négatif. Chaque respiromètre est relié à des sondes.
+
+Les deux bac à respiromètre sont dans des conditions de luminosité différente. Les respiromètres B recevront une lumière atténuée par rapport aux repsiromètres A. Pour mesurer la quantité de PAR reçue, nous utilison un quantumètre. L'appareil est placé dans un pot d'1L d'eau et on mesure ce que le corail devrait recevoir comme intensité lumineuse. Les respiromètres B recevront moitié moins d'intensité lumineuse (100 PAR de chaque côté) par rapport au respiromètres A qui recoivent 200 PAR de part et d'autre. Nous travaillons en PAR car cela vise les longueurs d'ondes utiles à la photosynthèse.
+
+Le principale problème de la manipulation de Nadège vient du fait qu'il y a une énorme diminution de température entre le premier et le dernier échantillonnage. 
+Pour réduire la perte de température nous n'ouvrons pas les respiromètres pour prélever les échantillons. Nous utilisons des pompes péristaltiques pour éviter un maximum les pertes en température et les changements en concentration d'oxygène. 
+Nous prenons également tout les paramètres en même temps en accrochant les 3 sondes ensembles. Nous utilisons un pH-mètre, un oxymètre et un conductimètre. Les échantillons sont placés sur une plaque agitatrice lors de la prise des paramètres pour bien mélanger la solution. Il faut prévoir assez de puce agitatrice pour tout les échantillons.
+
+Deux étudiants se répartissent les bacs à respirométrie A et B. Les 2 étudiants s'alternent tour à tour aux sondes pour prendre les paramètres, cela permet ainsi d'aller plus vite et d'encore réduire les pertes en température.  
+
+Protocole:
+  - purger un respiromètre pendant 10 secondes dans le pot poubelle
+  - remplir un pot avec 70 ml du contenu du respiromètre à l'aide de la pompe péristaltique
+  - une fois le pot rempli, aller aux sondes prendre les paramètres. Retirer les sondes de l'eau distillée, placer l'échantillon sur l'agitateur (500 rpm) et mettre une puce magnétique. Les 3 sondes sont placées en même temps
+  - pendant que les sondes mesurent les paramètres, prendre la mesure en O2 de l'IKS
+  - une fois les paramètres pris, retirer les sondes et les rincer dans le pots d'eau distillée. Placer l'échantillon dans un récipient à l'abris de la lumière.
+  - répéter l'opération pour tout les respiromètres en alternant entre 2 étudiants
+  - une fois tout les échantillons pris, nous les mettons rapidement en chambre froide
+  
+Ce protocole est a réaliser dans le cadre d'une manipulation nécessitant la prise de tout les paramètres. Dans le cadre de notre stage, nous mesurons les paramètras au début et à la fin de la manipulation. Les échantillons sont prélevés, mais comme la prise des paramètres avec sonde n'est pas indispensable, nous pouvons utiliser les pompes péristaltiques par deux pour gagner en temps.
+
+Nous effectuons les prélèvement d'échantillons toutes les heures pendant 3 jours. Après 3 jours de manipulation, les boutures sont retirées, pesées et remises dans le mésocosme A0 et les paramètres sont relevés.Le poid des boutures est ensuite encore suivit pendant 7 jours. Nous aurons donc un total un suivit de poid sur 17 jours.
+
+Les echantillons sont donc pris pendant 3 jours (de 11h le 25/04 à 10h le 27/04) à différentes heures. Nous prenons ces échantillons pour mesurer le taux en nutriments avec un autoanalyseur toutes les heures. Nous prenons de plus gros échantillons sur plusieurs cycles complets pour mesurer l'alkalinité par titrage HCl. Nous prenons comme cycle:
+  - 9h/10h le 25/04
+  - 12h/13h le 25/04 (ouvert -> fermé)
+  - 9h/10h le 26/04
+  - 15h/16h le 26/04
+
+![Dispositif de mesure des paramètres](../Image/sondes.jpg)
+
+![Dispositif du bac à respiromètres B](../Image/respiro1.jpg)
+
+![Dispositif d'un respiromètre](../Image/respiro2.jpg)
+
+# Résultat et discussion
+
+```{r}
+library(econum)
+library(plotly)
+library(tidyverse)
+```
+
+
+## Mesure de la croissance
+
+Nous avons tout d'abord testé l'erreur possible sur la mesure de 10 pesée d'une même bouture. La différence observée sur nos 10 mesures est de 0.001. NOus pouvons donc faire confiance à nos mesures avec la balance en immersion car cette erreur correspond à celle de la balance elle-même.
+
+Ce que nous souhaitons, c'est comparer la croissance des boutures entre celles restées dans le mésocosme, celle mise dans le bac à respiromètres A (100% luminosité) et celle mise dans le bac à respiromètres B (50% luminosité).
+
+```{r}
+#On commence par importer toutes les données du monitoring du poids au format du labo pour les mettre sous forme d'un bon tableau pour travailler avec
+
+
+direction <- "Data/ecophysio2018/weight/"
+
+all_data <- dir(direction, full.names = TRUE)
+
+repos_load(all_data[1])
+growth <- EcoNumData_weight
+
+for(f in all_data[-1]){
+  repos_load(f)
+  growth1 <- EcoNumData_weight
+  growth <- dplyr::bind_rows(growth, growth1)
+  remove(growth1)
+}
+remove(all_data, direction, f, EcoNumData_weight)
+
+#On rajoute une colonne pour savoir on est à combien de jour de monitoring
+
+growth$number_day <- as.numeric(round(difftime(growth$date,  growth$date[1], units = "day"),digits = 0))
+growth$number_day <- as.numeric(growth$number_day)
+
+#On rajoute une colonne qui nous donne le ratio de croissance des boutures en pourcentage par rapport à la première pesée
+
+growth%>%
+  group_by(localisation, species, id)%>%
+  mutate(growth_rate = ((((weight - weight[1])/weight[1]))))-> growth
+
+#On rajoute une colonne qui nous donne le taux de croissance par jour
+
+growth%>%
+  group_by(localisation, species, id)%>%
+  mutate(growth_rate_by_date = (growth_rate/number_day)*100)-> growth
+
+#On modifie juste la colonne growth_rate pour l'avoir en pourcentage plus clair
+
+growth[9] <- growth[9]*100
+
+#On renomme le jeux de données pour le mettre à un format plus clair d'utilisation et on nettoie l'environment
+
+ep2018_growth <- growth
+
+rm(growth)
+
+# On peut rajouter une colonne avec le numéro du respiro
+ep2018_growth$respiro <- as.character(gep2018_growth$id)
+ep2018_growth$respiro[ep2018_growth$id == "1"] <- "A"
+ep2018_growth$respiro[ep2018_growth$id == "2"] <- "A"
+ep2018_growth$respiro[ep2018_growth$id == "3"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "4"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "5"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "6"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "7"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "8"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "9"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "10"] <- "A"
+ep2018_growth$respiro[ep2018_growth$id == "11"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "12"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "13"] <- "B"
+ep2018_growth$respiro[ep2018_growth$id == "14"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "15"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "16"] <- "B"
+ep2018_growth$respiro[ep2018_growth$id == "17"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "18"] <- "M"
+ep2018_growth$respiro[ep2018_growth$id == "19"] <- "B"
+ep2018_growth$respiro[ep2018_growth$id == "20"] <- "M"
+
+```
+
+Nous représentons l'évolution du poids dans le graphique comparatif suivant :
+
+```{r}
+plot_growth <- ggplot(ep2018_growth, aes(x = number_day, y = growth_rate,color = as.factor(id))) + geom_point() + geom_line () + geom_vline(xintercept = c(8,10), color = "blue", size=0.2)+ xlab("Nombre de jour") + ylab("taux de croissance (%)") +
+  facet_grid( ~ respiro) + ggtitle("Mesure de la croissance des boutures") + theme(legend.position = "none")
+plot_growth
+```
+
+Nous pouvons également représenter la croissance par le graphique suivant
+
+```{r}
+ggplot(ep2018_growth, aes(x = number_day, y = growth_rate_by_date,color = as.factor(id))) + geom_point() + geom_line () + geom_vline(xintercept = c(8,10), color = "blue", size=0.2)+ xlab("Nombre de jour") + ylab("taux de croissance (% par jour") +
+  facet_grid( ~ respiro) + ggtitle("Mesure de la croissance des boutures") + theme(legend.position = "none")
+```
+
+Ces différents graphiques de croissance sont intéressant à comparer avec celui obtenu par l'ancien protocole.
+
+discuter
+
+
+## Paramètres physico-chimique
+
+Dans le cadre de notre manipulation, nous avons pris les paramètres de pH, température et salinité lors de la mise en respirométrie des boutures et après les avoir retiré. Nous pouvons ainsi voir l'évolution de ces 3 paramètres après manipulation. Ces paramètres ont été mesurés avec un pH-mètre, un oxymètre et un conductimètre (pour salinité et température).
+
+Nous représentons les différents paramètres par une série de boxplot :
+
+```{r}
+#importation des données
+library(readxl)
+ep2018_para <- read_excel("../Data/ecophysio2018/pc/ep2018_para.xlsx")
+
+#On met les paramètres en numérique
+
+ep2018_para$pH <- as.numeric(ep2018_para$pH)
+ep2018_para$S <- as.numeric(ep2018_para$S)
+ep2018_para$O2 <- as.numeric(ep2018_para$O2)
+ep2018_para$T <- as.numeric(ep2018_para$T)
+
+#Graphiques
+
+plot_pH <- ggplot(ep2018_para, aes(x = as.factor(day_number), y=pH, fill = as.factor(day_number), color = as.factor(day_number))) +
+  geom_boxplot(alpha=0.2) + 
+    xlab("") + ylab("pH") + ggtitle("mesure du pH") + theme(legend.position = "none", plot.title = element_text(size = 10, face = "bold"), axis.title = element_text(size=8)) + scale_color_manual(values=c('#BF3030','#048B9A'))+ geom_dotplot(binaxis='y', stackdir='center', dotsize=0.5) + scale_x_discrete(labels = c("mise des boutures", "retrait des boutures"))
+
+
+plot_S <- ggplot(ep2018_para, aes(x = as.factor(day_number), y=S, fill = as.factor(day_number), color = as.factor(day_number))) +
+  geom_boxplot(alpha=0.2) + 
+    xlab("") + ylab("Salinité (PSU)") + ggtitle("mesure de la salinité") + theme(legend.position = "none", plot.title = element_text(size = 10, face = "bold"), axis.title = element_text(size=8)) + scale_color_manual(values=c('#BF3030','#048B9A'))+ geom_dotplot(binaxis='y', stackdir='center', dotsize=0.5) + scale_x_discrete(labels = c("mise des boutures", "retrait des boutures"))
+
+
+plot_O2 <- ggplot(ep2018_para, aes(x = as.factor(day_number), y=O2, fill = as.factor(day_number), color = as.factor(day_number))) +
+  geom_boxplot(alpha=0.2) + 
+    xlab("") + ylab("oxygène (mg/l)") + ggtitle("mesure de l'oxygène") + theme(legend.position = "none", plot.title = element_text(size = 10, face = "bold"), axis.title = element_text(size=8)) + scale_color_manual(values=c('#BF3030','#048B9A'))+ geom_dotplot(binaxis='y', stackdir='center', dotsize=0.5) + scale_x_discrete(labels = c("mise des boutures", "retrait des boutures"))
+
+
+plot_T <- ggplot(ep2018_para, aes(x = as.factor(day_number), y=T, fill = as.factor(day_number), color = as.factor(day_number))) +
+  geom_boxplot(alpha=0.2) + 
+    xlab("") + ylab("température (°C)") + ggtitle("mesure de la température") + theme(legend.position = "none", plot.title = element_text(size = 10, face = "bold"), axis.title = element_text(size=8)) + scale_color_manual(values=c('#BF3030','#048B9A'))+ geom_dotplot(binaxis='y', stackdir='center', dotsize=0.5)+ scale_x_discrete(labels = c("mise des boutures", "retrait des boutures"))
+
+library(gridExtra)
+
+grid.arrange(plot_pH, plot_S, plot_O2,plot_T,ncol = 2, nrow = 2)
+
+```
+
+Grâce à ces boxplots nous pouvons remarquer que les paramètres ont changé entre le placement des boutures en respirométries et leur retrait. Mais il faut bien prendre en compte que ces changements ont pu avoir lieu dans le mésocosmes A0 et que ce soit cela qui influence et non les boutures. Pour le vérifier il suffit simplement de regarder si les respiromètres 4 et 8 on une valeur différente. En effet ces 2 respiromètres sont des contrôle négatif n'ayant pas de boutures. 
+Les valeurs des contrôles  négatifs sont constamment les mêmes que celles des respiromètres contenant des boutures. Nous ne pouvons donc pas nous fier à ces changements de paramètres pour conclure quoi que ce soit car ils ont eu lieu directement dans le mésocosme A0 (qui alimente les respiromètres).
+
+## Oxygène
+
+On veut regarder l'évolution de la concentration en oxygène entre cycle ouvert et cycle fermé dans les 2 types de respiro
+
+## Concentration en nutriment
+
+La concentration en nutriments a été mesurée a plusieurs reprise pour plusieurs cycles ouvert/fermé. Nous allons comparer l'évolution de ces nutriments en fonction du bac à mésocosme A ou B.
+
+```{r}
+#importation des différents jeux de données de l'auto-analyseurs
+
+##données 1
+repos_load(file = "../Data/ecophysio2018/aa3/180425A-inorga_2018-04-25_13.48.23_5ADFC500_aa3.RData")
+
+nutri <- EcoNumData_aa3.inorga
+nutri <- filter(nutri, sample_type == "SAMP")
+
+### Correction erreurs d'encodage
+nutri$sample_date[nutri$sample_date == "2018-04-25 09:00:01"] <- "2018-04-25 09:00:00"
+nutri$sample_date[nutri$sample_date == "2018-04-25 09:00:02"] <- "2018-04-25 09:00:00"
+nutri$sample_date[nutri$sample_date == "2018-04-25 09:00:03"] <- "2018-04-25 09:00:00"
+nutri$sample_date[nutri$sample_date == "2018-04-25 09:00:04"] <- "2018-04-25 09:00:00"
+nutri$sample_date[nutri$sample_date == "2018-04-25 10:00:00"] <- "2018-04-25 12:00:00"
+
+nutri$sample_date <- as.POSIXct(nutri$sample_date)
+
+## données 2
+
+repos_load(file = "../Data/ecophysio2018/aa3/180426A-inorga_2018-04-26_11.00.22_5AE11680_aa3.RData")
+
+nutri1 <- EcoNumData_aa3.inorga
+nutri1 <- filter(nutri1, sample_type == "SAMP")
+
+nutri1$sample_date <- as.POSIXct(nutri1$sample_date)
+
+##données 3
+
+repos_load(file = "../Data/ecophysio2018/aa3/180426CR1-inorga_2018-04-26_15.35.14_5AE11680_aa3.RData")
+
+
+nutri2 <- EcoNumData_aa3.inorga
+nutri2 <- filter(nutri2, sample_type == "SAMP")
+
+nutri2$sample_date <- as.POSIXct(nutri2$sample_date)
+
+##donnes 4
+
+repos_load(file = "../Data/ecophysio2018/aa3/180427A-inorga_2018-04-27_13.50.08_5AE26800_aa3.RData")
+
+
+nutri3 <- EcoNumData_aa3.inorga
+nutri3 <- filter(nutri3, sample_type == "SAMP")
+nutri3 <- filter(nutri3, project != "NA")
+
+nutri3$sample_date <- as.POSIXct(nutri3$sample_date)
+
+#On fusionne toutes les données et on nettoie l'environment
+
+ep2018_nutri <- bind_rows(nutri, nutri1, nutri2, nutri3 )
+rm(nutri,nutri1, nutri2, nutri3, EcoNumData_aa3.inorga)
+
+#On sépare la colonne sample pour avoir des colonnes avec la localisation du respiromètre, si on est ouvert ou fermé et ensuite l'heure.
+
+ep2018_nutri <- separate(ep2018_nutri, col = sample, into = c("loca", "position", "cycle"), remove = FALSE)
+
+#On renomme le numéro du respiromètre avec l'état soit le mésocosme, soit le bac à respiromètre B, soit le bac à respiromètre A.
+
+ep2018_nutri$type <- ep2018_nutri$loca
+ep2018_nutri$type[ep2018_nutri$loca == "R1"] <- "A"
+ep2018_nutri$type[ep2018_nutri$loca == "R2"] <- "A"
+ep2018_nutri$type[ep2018_nutri$loca == "R7"] <- "B"
+ep2018_nutri$type[ep2018_nutri$loca == "A0"] <- "M"
+ep2018_nutri$type[ep2018_nutri$loca == "R4"] <- "A"
+ep2018_nutri$type[ep2018_nutri$loca == "R5"] <- "B"
+ep2018_nutri$type[ep2018_nutri$loca == "R3"] <- "A"
+ep2018_nutri$type[ep2018_nutri$loca == "R6"] <- "B"
+ep2018_nutri$type[ep2018_nutri$loca == "R8"] <- "B"
+
+ep2018_nutri <- filter(ep2018_nutri, loca != "NA")
+
+
+
+#Graphique de l'évolution des nutriments
+
+plot_NO3 <- ggplot(data = ep2018_nutri, mapping = aes( x = sample_date, y = NO3_conc, color = type)) + geom_point(na.rm = TRUE) +  theme_bw()  + geom_line(na.rm = TRUE) 
+
+plot_PO4 <- ggplot(data = filter(ep2018_nutri, PO4_conc <= 4), mapping = aes( x = sample_date, y = PO4_conc, color = type)) + geom_point(na.rm = TRUE) + geom_line(na.rm = TRUE) + facet_wrap( ~ type, ncol = 3) + theme_bw()
+
+plot_NH4 <- ggplot(data = ep2018_nutri, mapping = aes( x = sample_date, y = NH4_conc, color = type)) + geom_point(na.rm = TRUE) + geom_line(na.rm = TRUE) + facet_wrap( ~ type, ncol = 3) + theme_bw()
+
+plot_NO3
+plot_PO4
+plot_NH4
+
+#Pour avoir un graphique plus clair, nous allons faire la moyenne des mesures des respiro des bacs A et la moyenne des mesure des respiro des bac B
+
+
+```
+
+On veut comparer l'évolution de la concentration en nutriment dans les respiromètres pour comparer le a et la B
+
+## Alkalinité
+
+
+
+#Conclusion
+
+pas possible de bien se fier car les respiro sont alimenté par le bac A0 qui n'est lui même pas constant en paramètres pc.

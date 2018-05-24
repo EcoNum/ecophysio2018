@@ -10,10 +10,20 @@ Ce dépôt porte sur les données acquises lors du cours/travaux pratiques d'[é
 
 ## Objectif  
 
-S'initier aux techniques de laboratoire couramment employées en écophysiologie des animaux aquatiques.
+- S'initier aux techniques de laboratoire couramment employées en écophysiologie des animaux aquatiques.
+- Amélioration du protocole de respirométrie
+- Etude de l'effet de la lumière comme facteur de stress sur les coraux
 
 ## Expérience
 
 L'expérience réalisées porte sur la mise en chambre de respirométrie des boutures de _Seriatopora hystrix_ Dana (1846). 
+
+##Structure du projet
+
+Ce projet est divisé en plusieurs dossiers:
+  - Data : rassemblant l'ensemble des jeux de données utilisés pour réaliser les différents résulats
+  - Image : contenant les différents images illustrant ce rapport
+  - R : rassemblant les différents script R qui ont permis l'édition des résutats
+  - report : contenant le rapport sous différents formats ainsi que la bibliographie
 
 

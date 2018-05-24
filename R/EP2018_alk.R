@@ -70,3 +70,14 @@ ggplot(data = filter(alk, expe != "A0"), mapping = aes( x = sampledate, y = alk,
   facet_wrap( ~ expe, ncol = 2) +
   theme_bw()
 
+#On renomme les respiro
+
+ep2018_alk$respiro[ep2018_alk$respiro =="01"] <- "R1"
+ep2018_alk$respiro[ep2018_alk$respiro =="02"] <- "R2"
+ep2018_alk$respiro[ep2018_alk$respiro =="03"] <- "R3"
+ep2018_alk$respiro[ep2018_alk$respiro =="04"] <- "R4"
+ep2018_alk$respiro[ep2018_alk$respiro =="05"] <- "R5"
+ep2018_alk$respiro[ep2018_alk$respiro =="06"] <- "R6"
+ep2018_alk$respiro[ep2018_alk$respiro =="07"] <- "R7"
+ep2018_alk$respiro[ep2018_alk$respiro =="07 "] <- "R7"
+ep2018_alk$respiro[ep2018_alk$respiro =="08"] <- "R8"

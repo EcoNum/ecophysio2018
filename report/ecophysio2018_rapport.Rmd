@@ -4,8 +4,8 @@ title: 'Ecophysiologie : protocole de respirométrie et mesure de la croissance 
 author: "Dugauquier Rémy, Gille Madeleine"
 date: "P.Grosjean, G.Engels, Ecologie numérique des milieux aquatiques, UMONS 20/05/2018"
 output:
-  word_document: default
   html_notebook: default
+  word_document: default
   pdf_document: default
   html_document: default
 bibliography: references.bib

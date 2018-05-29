@@ -1,0 +1,51 @@
+---
+title: "Correctif"
+author: "Engels Guyliann"
+abstract: "Ce rapport obtient une valeur de 18/20"
+output: html_notebook
+---
+
+# Remarques générales
+
+- la présence d'une table des matières est un plus dans la lecture d'un rapport.
+
+- La gestion de l'environement global peut être améliorée. 
+
+- On n'utilise pas de numératation manuelle d'un rapport de type rmd car c'est réalisé automatiquement. 
+
+- Utilisation d'une légende automatique
+
+- Utilisation de git 
+
+# Remarques sur l'écrit
+
+- Nombreuses fautes d'orthographes
+
+## Nouveau protocole
+
+- La fonction sample() est employée et non la fonction random().
+
+- La notion de PAR n'est pas introduite alors que l'abréviation est employée. 
+
+## Résultats et discussion
+
+### Mesure de la croissance
+
+- "Avant toute mesure, un test de confiance des pesées a été réalisé en mesurant 10 fois la même bouture. La différence observée sur les 10 mesures est de + ou - 0.001g." donc avant chaque pesée vous avez réalisé 10 mesures au préalable? 
+
+### Concentration en nutriment
+
+- Les boites de dispersion ne représentent rien car vous comparez différentes heures de la journée 
+
+### Alcalinité
+
+- Les points du graphique doivent être reliés. Pourquoi il n'y a pas de valeur de A0 sur la seconde journée?
+
+### Respiration
+
+- Il manque les écart-types sur les graphiques
+
+
+# Conclusion
+
+Ce travail est de qualité avec l'apprentissage de nombreux outils nouveaux et un travail conséquent d'acquisition des données.

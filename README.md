@@ -26,4 +26,6 @@ Ce projet est divisé en plusieurs dossiers:
   - R : rassemblant les différents script R qui ont permis l'édition des résutats
   - report : contenant le rapport sous différents formats ainsi que la bibliographie
 
+## Mise à jour 
 
+Ce projet est retravaillé afin d'en améliorer le worflow dans le cadre du stage de Raphael Conotte. 
